@@ -105,7 +105,7 @@ choosen_word = word_list[rd.randint(0,len(word_list)-1)]
 choosen_word_arr = []
 for i in range(1,len(choosen_word)+1):
   choosen_word_arr.append("_")
-str = "".join(choosen_word_arr)
+str = " ".join(choosen_word_arr)
 print(f"Current status {str}\n")
 hangman_index = 0;
 
@@ -124,7 +124,7 @@ while True:
     print(f"{HANGMANPICS[hangman_index]}")
     hangman_index += 1
   
-  str = "".join(choosen_word_arr)
+  str = " ".join(choosen_word_arr)
   print(f"Current status {str}\n")
   
   if(hangman_index == len(HANGMANPICS)):
